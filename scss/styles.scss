@@ -59,8 +59,21 @@ h6 {
   height: 100%;
 }
 
+.facebook, .twitter {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  width: 20px;
+  height: 20px
+}
+
+.bg-cards {
+  background-color: rgb(32, 32, 37);
+  filter:alpha(opacity=100);
+  -moz-opacity:0.7;opacity:0.8;
+}
+
 @media (max-width: 991px) {
-  .logo {
+  .logo, .media {
     display: none;
   }
 
