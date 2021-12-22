@@ -2,13 +2,14 @@
   font-family: cocogoose;
   src: url("src/font/cocogoose_trial.ttf");
 }
+
 h6 {
   color: #ec5242;
 }
 
 .bg-image {
-  background-image: url("src/img/background.jpg");
-  height: 500px;
+  background-image: url("../src/img/duotone.png");
+  height: 100%;
   background-size: cover;
 }
 
@@ -26,13 +27,20 @@ h6 {
   width: 70%;
 }
 
+.sub-about {
+  color: #ec5242;
+  font-size: 50px;
+  font-family: cocogoose, sans-serif;
+  font-weight: 900;
+  width: 50%;
+}
+
 .description {
   width: 50%;
 }
 
 .bg-image-program {
-  background-image: url("src/img/background_dark.jpg");
-  height: 100vh;
+  background-image: url("../src/img/background_dark.jpg");
 }
 
 .icons {
@@ -55,7 +63,8 @@ h6 {
   height: 100%;
 }
 
-.facebook, .twitter {
+.facebook,
+.twitter {
   -webkit-filter: invert(100%);
   filter: invert(100%);
   width: 20px;
@@ -64,13 +73,40 @@ h6 {
 
 .bg-cards {
   background-color: #202025;
-  filter: alpha(opacity=100);
   -moz-opacity: 0.7;
   opacity: 0.8;
 }
 
+.bg-about {
+  background-image: url("../src/img/back_about.jpg");
+}
+
+.description-about {
+  width: 50%;
+}
+
+.vector-separate {
+  border: 1px solid #d3d3d3;
+  width: 100%;
+}
+
+.img-1 {
+  width: 340px;
+  height: 200px;
+  background-image: url("../src/img/family_beach.png");
+  background-size: cover;
+}
+
+.img-2 {
+  width: 340px;
+  height: 200px;
+  background-image: url("../src/img/family_ski.png");
+  background-size: cover;
+}
+
 @media (max-width: 991px) {
-  .logo, .media {
+  .logo,
+  .media {
     display: none;
   }
 
@@ -78,8 +114,17 @@ h6 {
     width: 100%;
   }
 
+  .description-about {
+    width: 100%;
+    padding: 10px;
+  }
+
   .sub-title {
     width: 100%;
+    font-size: 36px;
+  }
+
+  .sub-about {
     font-size: 36px;
   }
 }
