@@ -13,7 +13,7 @@ https://user-images.githubusercontent.com/91301423/147256882-c484bf7c-2348-4ad3-
 - Html
 - Css
 - Javascript
-- -Bootstrap
+- Bootstrap
 
 ## Live Demo
 
@@ -32,8 +32,11 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
+### Web Design
+All the template colors, font, layout distribution for the whole project were designed by [Cindy Shin](https://www.behance.net/adagio07) on Behance. Check Cindy for more amazing GUI and Graphic designs!  
+
+### Assets
+Some Icons were provided by [Fontawesome](https://fontawesome.com/).
 
 ## 📝 License
 
