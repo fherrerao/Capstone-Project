@@ -2,6 +2,10 @@
   font-family: cocogoose;
   src: url("src/font/cocogoose_trial.ttf");
 }
+html {
+  overflow-y: visible;
+}
+
 h6 {
   color: #ec5242;
 }
@@ -70,7 +74,7 @@ h6 {
 }
 
 .bg-cards {
-  background-color: #202025;
+  background-color: #2a2a31;
   filter: alpha(opacity=100);
   -moz-opacity: 0.7;
   opacity: 0.8;

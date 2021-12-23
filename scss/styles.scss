@@ -6,6 +6,10 @@ $gray: #d3d3d3;
   src: url('src/font/cocogoose_trial.ttf');
 }
 
+html {
+  overflow-y: visible;
+}
+
 h6 {
   color: $orange;
 }
@@ -74,7 +78,7 @@ h6 {
 }
 
 .bg-cards {
-  background-color: rgb(32, 32, 37);
+  background-color: rgb(42, 42, 49);
   filter:alpha(opacity=100);
   -moz-opacity:0.7;opacity:0.8;
 }
