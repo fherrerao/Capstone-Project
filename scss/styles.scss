@@ -106,6 +106,45 @@ h6 {
   background-size: cover;
 }
 
+.person {  
+  width: 135px;
+  height: 135px;
+  // background-image: url('../src/img/person1.jpeg');
+  background-size: cover;
+  position: relative;
+}
+
+.person img {
+  width: 135px;
+  height: 135px;
+}
+
+.chess {
+  width: 90px;
+  height: 90px;
+  background-image: url('../src/img/chess_board.svg');
+  background-size: cover;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  z-index: -1;
+}
+
+.vector-person {
+  margin: 5px;
+  width: 50px;
+  border: 1px solid $gray;  
+}
+
+.person-card {
+  max-width: 540px;
+}
+
+.profesion {
+  font-style: italic;
+  color: #ec5242;
+}
+
 @media (max-width: 991px) {
   .logo, .media {
     display: none;
@@ -127,5 +166,19 @@ h6 {
 
   .sub-about {
     font-size: 36px;
+  }
+
+  .person {
+    width: 120px;
+    height: 120px;
+  }
+
+  .card-text {
+    font-size: 11px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .meet {
+    margin-bottom: 15px;
   }
 }
