@@ -46,7 +46,8 @@ let tourists = [
 
 for (let i = 0; i <= tourists.length-1; i += 1) {
     const person = document.createElement('DIV');
-    person.classList.add('mb-3', 'person-card');
+    person.classList.add('mb-3', 'person-card','flex');
+    person.setAttribute('data-visible', (i < 2 ? 'true' : 'false'));
     person.innerHTML = `
     <div class="row g-0 mt-5">
         <div class="col-4">                            
@@ -70,3 +71,9 @@ for (let i = 0; i <= tourists.length-1; i += 1) {
     
     personContainer.appendChild(person);
 }
+
+document.getElementById('see_more').addEventListener('click', (e) => {
+    Array.of(...document.querySelectorAll('.person-card')).forEach((card, i) => card.setAttribute('data-visible', (i >= 2 && card.getAttribute('data-visible') === 'true') ? 'false' : 'true'));
+    if (e.target.innerHTML.includes('MORE')) e.target.innerHTML = 'LESS <i class="fas fa-chevron-up"></i>';
+    else e.target.innerHTML = 'MORE <i class="fas fa-chevron-down"></i>';
+});
