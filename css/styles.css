@@ -2,7 +2,6 @@
   font-family: cocogoose;
   src: url("src/font/cocogoose_trial.ttf");
 }
-
 html {
   overflow-y: visible;
 }
@@ -150,7 +149,7 @@ h6 {
   display: none;
 }
 
-.person-card[data-visible="false"] {
+.person-card[data-visible=false] {
   visibility: visible;
   opacity: 1;
   position: static;
@@ -158,7 +157,7 @@ h6 {
 
 @media (max-width: 991px) {
   .logo,
-  .media {
+.media {
     display: none;
   }
 
@@ -198,7 +197,7 @@ h6 {
     margin-bottom: 15px;
   }
 
-  .person-card[data-visible="false"] {
+  .person-card[data-visible=false] {
     visibility: hidden;
     opacity: 0;
     position: absolute;
@@ -211,6 +210,14 @@ h6 {
 
   .t-title {
     width: 85px;
+  }
+
+  .fa-3x {
+    font-size: 1.5em;
+  }
+
+  .t-description {
+    font-size: 14px;
   }
 }
 
