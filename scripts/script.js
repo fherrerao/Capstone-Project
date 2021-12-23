@@ -1,52 +1,52 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
 });
 
 const personContainer = document.querySelector('.cards-container');
 
-let tourists = [
+const tourists = [
     {
         name: 'Alexandra Herrero',
         profession: 'Member of the White House Council for Community Solutions',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In quis quos ipsam, maxime voluptatum.',
-        image: 'src/img/person1.jpeg'
+        image: 'src/img/person1.jpeg',
     },
     {
         name: 'Nelson Olivares',
         profession: 'Superintendent in the School District of Washington, Indiana',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In quis quos ipsam, maxime voluptatum.',
-        image: 'src/img/person2.jpeg'
+        image: 'src/img/person2.jpeg',
     },
     {
         name: 'Mario Ros',
         profession: 'Dean of the School of Information Studies, University of California',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In quis quos ipsam, maxime voluptatum.',
-        image: 'src/img/person3.jpeg'
+        image: 'src/img/person3.jpeg',
     },
     {
         name: 'Vanesa Frutos',
         profession: 'Editor-in-chief of US Vice President Al Gore speeches',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In quis quos ipsam, maxime voluptatum.',
-        image: 'src/img/person4.jpeg'
+        image: 'src/img/person4.jpeg',
     },
     {
         name: 'Adrian Gomez',
         profession: 'Computer Science Professor in Lexington, Massachusetts',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In quis quos ipsam, maxime voluptatum.',
-        image: 'src/img/person5.jpeg'
+        image: 'src/img/person5.jpeg',
     },
     {
         name: 'Valentina Enriquez',
         profession: 'Emeritus Professor at the University of Maryland',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In quis quos ipsam, maxime voluptatum.',
-        image: 'src/img/person6.jpeg'
-    }
-    
-]
+        image: 'src/img/person6.jpeg',
+    },
 
-for (let i = 0; i <= tourists.length-1; i += 1) {
+];
+
+for (let i = 0; i <= tourists.length - 1; i += 1) {
     const person = document.createElement('DIV');
-    person.classList.add('mb-3', 'person-card','flex');
+    person.classList.add('mb-3', 'person-card', 'flex');
     person.setAttribute('data-visible', (i < 2 ? 'true' : 'false'));
     person.innerHTML = `
     <div class="row g-0 mt-5">
@@ -68,7 +68,7 @@ for (let i = 0; i <= tourists.length-1; i += 1) {
             </div>
         </div>    
     </div>`;
-    
+
     personContainer.appendChild(person);
 }
 
