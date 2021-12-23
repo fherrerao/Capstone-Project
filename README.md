@@ -36,7 +36,8 @@ Give a ⭐️ if you like this project!
 All the template colors, font, layout distribution for the whole project were designed by [Cindy Shin](https://www.behance.net/adagio07) on Behance. Check Cindy for more amazing GUI and Graphic designs!  
 
 ### Assets
-Some Icons were provided by [Fontawesome](https://fontawesome.com/).
+Some Icons were provided by [Fontawesome](https://fontawesome.com/),
+and the images were provided by [Pixabay](https://pixabay.com/).
 
 ## 📝 License
 
