@@ -1,0 +1,337 @@
+$black: #272a31;
+$orange: #ec5242;
+$gray: #d3d3d3;
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.header {
+  a {
+    text-decoration: none;
+  }
+}
+
+.link-6 {
+  border: 3px solid $orange;
+  padding: 10px;
+}
+
+.desktop-header {
+  ul {
+    display: flex;
+    column-gap: 10px;
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        font-size: 16px;
+
+        &:hover,
+        &:focus {
+          color: #ec5242;
+        }
+      }
+    }
+  }
+}
+
+.link {
+  color: #272a31;
+}
+
+.hamb {
+  height: 2px;
+  width: 16px;
+  left: 4px;
+  top: 7px;
+  background-color: rgb(27, 25, 25);
+  margin-bottom: 2px;
+}
+
+h6 {
+  color: $orange;
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+.nav-link,
+.whole {
+  font-size: 16px;
+}
+
+.bg-image {
+  background-image: url("../src/img/duotone.png");
+  height: 100%;
+  background-size: cover;
+}
+
+.title {
+  color: $orange;
+  font-size: 36px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+.description {
+  width: 50%;
+  font-size: 16px;
+}
+
+.bg-image-program {
+  background-image: url("../src/img/background_dark.jpg");
+}
+
+.icons {
+  width: 50px;
+  height: 50px;
+}
+
+.vector {
+  margin: 5px;
+  width: 50px;
+  border: 1px solid $orange;
+}
+
+.li-companies {
+  list-style: none;
+}
+
+.companies {
+  background-color: rgba(60, 62, 70, 0.993);
+  height: 100%;
+}
+
+.facebook,
+.twitter {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  width: 20px;
+  height: 20px;
+}
+
+.bg-cards {
+  background-color: rgb(42, 42, 49);
+  -moz-opacity: 0.7;
+  opacity: 0.8;
+}
+
+.bg-about {
+  background-image: url("../src/img/back_about.jpg");
+}
+
+.description-about {
+  font-size: 16px;
+  width: 50%;
+}
+
+.vector-separate {
+  border: 1px solid $gray;
+  width: 100%;
+}
+
+.img-1 {
+  width: 340px;
+  height: 200px;
+  background-image: url("../src/img/family_beach.png");
+  background-size: cover;
+}
+
+.img-2 {
+  width: 340px;
+  height: 200px;
+  background-image: url("../src/img/family_ski.png");
+  background-size: cover;
+}
+
+.person {
+  width: 135px;
+  height: 135px;
+  // background-image: url('../src/img/person1.jpeg');
+  background-size: cover;
+  position: relative;
+}
+
+.person img {
+  width: 135px;
+  height: 135px;
+}
+
+.chess {
+  width: 90px;
+  height: 90px;
+  background-image: url("../src/img/chess_board.svg");
+  background-size: cover;
+  position: absolute;
+  left: -12px;
+  top: -12px;
+  z-index: -1;
+}
+
+.vector-person {
+  margin: 5px;
+  width: 50px;
+  border: 1px solid $gray;
+}
+
+.person-card {
+  max-width: 540px;
+}
+
+.profesion {
+  font-style: italic;
+  color: #ec5242;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btn {
+  display: none;
+}
+
+.person-card[data-visible="false"] {
+  visibility: visible;
+  opacity: 1;
+  position: static;
+}
+
+.p-description,
+.t-description,
+.contact,
+.d-logo,
+.d-past,
+.d-trips,
+.d-footer {
+  font-size: 16px;
+}
+
+.card-text {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+
+.logo {
+  color: #272a31;
+}
+
+.a-footer {
+  background-color: #272a31;
+  color: #d3d3d3;
+}
+
+.sub-title {
+  font-size: 50px;
+  color: #ec5242;
+  font-family: "COCOGOOSE", sans-serif;
+  font-weight: 700;
+  width: 70%;
+  background-image: linear-gradient(45deg, rgb(248, 2, 2), $orange, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 30px;
+}
+
+.about-title {
+  font-size: 50px;
+  color: #ec5242;
+  font-family: "COCOGOOSE", sans-serif;
+  font-weight: 700;
+  width: 70%;
+  margin-top: 30px;
+}
+
+@media (max-width: 991px) {
+  .desktop-header {
+    opacity: 0;
+  }
+
+  .logo,
+  .media {
+    display: none;
+  }
+
+  .btn {
+    display: block;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .description-about {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .sub-title {
+    width: 100%;
+    font-size: 36px;
+  }
+
+  .sub-about {
+    font-size: 36px;
+  }
+
+  .person {
+    width: 120px;
+    height: 120px;
+  }
+
+  .card-text {
+    font-size: 11px;
+    font-family: "Lato", sans-serif;
+  }
+
+  .meet {
+    margin-bottom: 15px;
+  }
+
+  .person-card[data-visible="false"] {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+  }
+
+  .p-description {
+    font-size: 11px;
+    width: 150px;
+  }
+
+  .t-title {
+    width: 85px;
+  }
+
+  .fa-3x {
+    font-size: 2em;
+  }
+
+  .t-description {
+    font-size: 11px;
+  }
+
+  .a-footer {
+    padding: 0 50px;
+  }
+
+  .sub-title,
+  .about-title {
+    font-size: 32px;
+  }
+}
+
+.navbar-toggler-icon.activated {
+  background-image: url("../src/img/equis.png");
+  background-size: cover;
+}
