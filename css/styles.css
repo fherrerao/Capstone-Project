@@ -212,7 +212,7 @@ h5 {
   display: none;
 }
 
-.person-card[data-visible="false"] {
+.person-card[data-visible=false] {
   visibility: visible;
   opacity: 1;
   position: static;
@@ -288,7 +288,7 @@ h5 {
     margin-bottom: 15px;
   }
 
-  .person-card[data-visible="false"] {
+  .person-card[data-visible=false] {
     visibility: hidden;
     opacity: 0;
     position: absolute;

@@ -4,12 +4,12 @@ $gray: #d3d3d3;
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; /*1rem = 10 px*/
+  font-size: 62.5%;
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -28,11 +28,14 @@ html {
   ul {
     display: flex;
     column-gap: 10px;
+
     li {
       list-style: none;
+
       a {
         text-decoration: none;
         font-size: 16px;
+
         &:hover,
         &:focus {
           color: #ec5242;
@@ -252,6 +255,7 @@ h5 {
   .desktop-header {
     opacity: 0;
   }
+
   .logo,
   .media {
     display: none;
