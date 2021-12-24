@@ -1,5 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
-
+const navbar = document.querySelector('.navbar-toggler-icon');
+navbar.addEventListener('click', () => {
+  navbar.classList.toggle('activated');
 });
 
 const personContainer = document.querySelector('.cards-container');

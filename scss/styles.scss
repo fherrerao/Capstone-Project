@@ -2,17 +2,71 @@ $black: #272a31;
 $orange: #ec5242;
 $gray: #d3d3d3;
 
-@font-face {
-  font-family: cocogoose;
-  src: url("src/font/cocogoose_trial.ttf");
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*1rem = 10 px*/
 }
 
-html {
-  overflow-y: visible;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.header {
+  a {
+    text-decoration: none;
+  }
+}
+
+.link-6 {
+  border: 3px solid $orange;
+  padding: 10px;
+}
+
+.desktop-header {
+  ul {
+    display: flex;
+    column-gap: 10px;
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        &:hover,
+        &:focus {
+          color: #ec5242;
+        }
+      }
+    }
+  }
+}
+
+.link {
+  color: #272a31;
+}
+
+.hamb {
+  height: 2px;
+  width: 16px;
+  left: 4px;
+  top: 7px;
+  background-color: rgb(27, 25, 25);
+  margin-bottom: 2px;
 }
 
 h6 {
   color: $orange;
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+.nav-link,
+.whole {
+  font-size: 16px;
 }
 
 .bg-image {
@@ -25,14 +79,19 @@ h6 {
   color: $orange;
   font-size: 36px;
   font-family: "Lato", sans-serif;
+  font-weight: 700;
 }
 
 .sub-title {
   font-size: 50px;
   color: #ec5242;
-  font-family: cocogoose, sans-serif;
+  font-family: "cocogoose", sans-serif;
   font-weight: 700;
   width: 70%;
+  background-image: linear-gradient(45deg, rgb(248, 2, 2), $orange, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 30px;
 }
 
 .sub-about {
@@ -45,6 +104,7 @@ h6 {
 
 .description {
   width: 50%;
+  font-size: 16px;
 }
 
 .bg-image-program {
@@ -90,6 +150,7 @@ h6 {
 }
 
 .description-about {
+  font-size: 16px;
   width: 50%;
 }
 
@@ -149,6 +210,8 @@ h6 {
 .profesion {
   font-style: italic;
   color: #ec5242;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .btn {
@@ -161,7 +224,34 @@ h6 {
   position: static;
 }
 
+.p-description,
+.t-description,
+.contact,
+.d-logo,
+.d-past,
+.d-trips,
+.d-footer {
+  font-size: 16px;
+}
+
+.card-text {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+
+.logo {
+  color: #272a31;
+}
+
+.a-footer {
+  background-color: #272a31;
+  color: #d3d3d3;
+}
+
 @media (max-width: 991px) {
+  .desktop-header {
+    opacity: 0;
+  }
   .logo,
   .media {
     display: none;
@@ -225,4 +315,13 @@ h6 {
   .t-description {
     font-size: 11px;
   }
+
+  .a-footer {
+    padding: 0 50px;
+  }
+}
+
+.navbar-toggler-icon.activated {
+  background-image: url("../src/img/equis.png");
+  background-size: cover;
 }
