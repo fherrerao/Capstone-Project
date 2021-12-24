@@ -192,7 +192,7 @@ h5 {
   display: none;
 }
 
-.person-card[data-visible=false] {
+.person-card[data-visible="false"] {
   visibility: visible;
   opacity: 1;
   position: static;
@@ -225,7 +225,7 @@ h5 {
 .sub-title {
   font-size: 50px;
   color: #ec5242;
-  font-family: "cocogoose", sans-serif;
+  font-family: "COCOGOOSE", sans-serif;
   font-weight: 700;
   width: 70%;
   background-image: linear-gradient(45deg, #f80202, #ec5242, yellow);
@@ -237,7 +237,7 @@ h5 {
 .about-title {
   font-size: 50px;
   color: #ec5242;
-  font-family: "cocogoose", sans-serif;
+  font-family: "COCOGOOSE", sans-serif;
   font-weight: 700;
   width: 70%;
   margin-top: 30px;
@@ -289,7 +289,7 @@ h5 {
     margin-bottom: 15px;
   }
 
-  .person-card[data-visible=false] {
+  .person-card[data-visible="false"] {
     visibility: hidden;
     opacity: 0;
     position: absolute;
