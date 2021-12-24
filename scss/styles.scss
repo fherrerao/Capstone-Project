@@ -85,26 +85,6 @@ h5 {
   font-weight: 700;
 }
 
-.sub-title {
-  font-size: 50px;
-  color: #ec5242;
-  font-family: "cocogoose", sans-serif;
-  font-weight: 700;
-  width: 70%;
-  background-image: linear-gradient(45deg, rgb(248, 2, 2), $orange, yellow);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-top: 30px;
-}
-
-.sub-about {
-  color: $orange;
-  font-size: 50px;
-  font-family: cocogoose, sans-serif;
-  font-weight: 900;
-  width: 50%;
-}
-
 .description {
   width: 50%;
   font-size: 16px;
@@ -251,6 +231,27 @@ h5 {
   color: #d3d3d3;
 }
 
+.sub-title {
+  font-size: 50px;
+  color: #ec5242;
+  font-family: "cocogoose", sans-serif;
+  font-weight: 700;
+  width: 70%;
+  background-image: linear-gradient(45deg, rgb(248, 2, 2), $orange, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 30px;
+}
+
+.about-title {
+  font-size: 50px;
+  color: #ec5242;
+  font-family: "cocogoose", sans-serif;
+  font-weight: 700;
+  width: 70%;
+  margin-top: 30px;
+}
+
 @media (max-width: 991px) {
   .desktop-header {
     opacity: 0;
@@ -322,6 +323,11 @@ h5 {
 
   .a-footer {
     padding: 0 50px;
+  }
+
+  .sub-title,
+  .about-title {
+    font-size: 32px;
   }
 }
 
